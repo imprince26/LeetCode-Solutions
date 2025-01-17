@@ -19,10 +19,10 @@ public class Problem20 {
 
     public static void main(String[] args) {
         Problem20 solution = new Problem20();
-        System.out.println(solution.isValid("()")); 
-        System.out.println(solution.isValid("()[]{}")); 
-        System.out.println(solution.isValid("(]")); 
-        System.out.println(solution.isValid("([)]")); 
-        System.out.println(solution.isValid("{[]}")); 
+        System.out.println(solution.isValid("()"));
+        System.out.println(solution.isValid("()[]{}"));
+        System.out.println(solution.isValid("(]"));
+        System.out.println(solution.isValid("([)]"));
+        System.out.println(solution.isValid("{[]}"));
     }
 }
