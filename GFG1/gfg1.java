@@ -19,15 +19,15 @@ public class gfg1 {
 
         return result.toString();
     }
+
     public static void main(String[] args) {
         String s1 = "aabb";
         String s2 = "aabaa";
         String s3 = "abcddcba";
-        
+
         System.out.println(removeConsecutiveDuplicates(s1)); // Output: "ab"
         System.out.println(removeConsecutiveDuplicates(s2)); // Output: "aba"
         System.out.println(removeConsecutiveDuplicates(s3)); // Output: "abcdcba"
     }
 
-   
 }
