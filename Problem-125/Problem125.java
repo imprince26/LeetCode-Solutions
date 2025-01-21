@@ -3,17 +3,17 @@ public class Problem125 {
         if (s == null) {
             return false;
         }
-    
+
         StringBuilder filteredString = new StringBuilder();
         for (char c : s.toCharArray()) {
             if (Character.isLetterOrDigit(c)) {
                 filteredString.append(Character.toLowerCase(c));
             }
         }
-    
+
         String filtered = filteredString.toString();
         String reversed = filteredString.reverse().toString();
-    
+
         return filtered.equals(reversed);
     }
 
