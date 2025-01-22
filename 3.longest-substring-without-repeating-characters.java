@@ -1,10 +1,11 @@
-/*==== 
-3. Longest Substring Without Repeating Characters
-Given a string s, find the length of the longest substring without repeating characters.
-====*/
+/*
+ * @lc app=leetcode id=3 lang=java
+ *
+ * [3] Longest Substring Without Repeating Characters
+ */
 
-import java.util.HashMap;
-class Problem3 {
+// @lc code=start
+class Solution {
     public int lengthOfLongestSubstring(String s) {
         int st=0;
         int maxLength=0;
@@ -17,6 +18,8 @@ class Problem3 {
             map.put(ch,i);
             maxLength=Math.max(maxLength,i-st+1);
         }
-        return maxLength;       
+        return maxLength; 
     }
 }
+// @lc code=end
+

@@ -1,6 +1,11 @@
-/* Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. */
+/*
+ * @lc app=leetcode id=4 lang=java
+ *
+ * [4] Median of Two Sorted Arrays
+ */
 
-public class Problem4 {
+// @lc code=start
+class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
@@ -20,6 +25,7 @@ public class Problem4 {
             median = ans[ans.length / 2];
         }
         return median;
-
     }
 }
+// @lc code=end
+

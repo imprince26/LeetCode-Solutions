@@ -1,6 +1,11 @@
-/* Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. */ 
+/*
+ * @lc app=leetcode id=1 lang=java
+ *
+ * [1] Two Sum
+ */
 
-public class Problem1 {
+// @lc code=start
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -13,3 +18,5 @@ public class Problem1 {
         return null;
     }
 }
+// @lc code=end
+
