@@ -1,9 +1,11 @@
-import java.util.HashMap;
-import java.util.Map;
+/*
+ * @lc app=leetcode id=13 lang=java
+ *
+ * [13] Roman to Integer
+ */
 
-// LeetCode Problem 13: Roman to Integer
-
-public class Problem13 {
+// @lc code=start
+class Solution {
     public int romanToInt(String s) {
         Map<Character, Integer> romanMap = new HashMap<>();
         romanMap.put('I', 1);
@@ -29,13 +31,6 @@ public class Problem13 {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        Problem13 solution = new Problem13();
-        System.out.println(solution.romanToInt("III")); // Output: 3
-        System.out.println(solution.romanToInt("IV")); // Output: 4
-        System.out.println(solution.romanToInt("IX")); // Output: 9
-        System.out.println(solution.romanToInt("LVIII")); // Output: 58
-        System.out.println(solution.romanToInt("MCMXCIV")); // Output: 1994
-    }
 }
+// @lc code=end
+

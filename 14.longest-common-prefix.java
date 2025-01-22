@@ -1,8 +1,11 @@
-import java.util.Arrays;
+/*
+ * @lc app=leetcode id=14 lang=java
+ *
+ * [14] Longest Common Prefix
+ */
 
-// LeetCode Problem 14: Longest Common Prefix
-
-public class Problem14 {
+// @lc code=start
+class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0)
             return "";
@@ -19,10 +22,5 @@ public class Problem14 {
         }
         return ans.toString();
     }
-
-    public static void main(String[] args) {
-        Problem14 solution = new Problem14();
-        String[] strs = { "flower", "flow", "flight" };
-        System.out.println(solution.longestCommonPrefix(strs));
-    }
 }
+// @lc code=end

@@ -1,7 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+/*
+ * @lc app=leetcode id=17 lang=java
+ *
+ * [17] Letter Combinations of a Phone Number
+ */
 
-public class Problem17 {
+// @lc code=start
+class Solution {
     private static final String[] KEYS = {
         "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
     };
@@ -25,9 +29,6 @@ public class Problem17 {
             backtrack(result, digits, current + letter, index + 1);
         }
     }
-
-    public static void main(String[] args) {
-        Problem17 solution = new Problem17();
-        System.out.println(solution.letterCombinations("23"));
-    }
 }
+// @lc code=end
+
