@@ -1,7 +1,11 @@
-/* == 
- 5. Longest Palindromic Substring
-==*/
-public class Problem5 {
+/*
+ * @lc app=leetcode id=5 lang=java
+ *
+ * [5] Longest Palindromic Substring
+ */
+
+// @lc code=start
+class Solution {
     public String longestPalindrome(String s) {
         if (s.length() <= 1) {
             return s;
@@ -23,7 +27,6 @@ public class Problem5 {
 
         return maxStr;
     }
-
     private String expandFromCenter(String s, int left, int right) {
         while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             left--;
@@ -32,3 +35,5 @@ public class Problem5 {
         return s.substring(left + 1, right);
     }
 }
+// @lc code=end
+

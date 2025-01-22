@@ -1,5 +1,11 @@
-// reverse integer
-public class Problem7 {
+/*
+ * @lc app=leetcode id=7 lang=java
+ *
+ * [7] Reverse Integer
+ */
+
+// @lc code=start
+class Solution {
     public int reverse(int x) {
         int reversed = 0;
         while (x != 0) {
@@ -13,12 +19,6 @@ public class Problem7 {
         }
         return reversed;
     }
-
-    public static void main(String[] args) {
-        Problem7 solution = new Problem7();
-        System.out.println(solution.reverse(123)); // Output: 321
-        System.out.println(solution.reverse(-123)); // Output: -321
-        System.out.println(solution.reverse(120)); // Output: 21
-        System.out.println(solution.reverse(0)); // Output: 0
-    }
 }
+// @lc code=end
+
