@@ -1,6 +1,11 @@
-import java.util.Stack;
+/*
+ * @lc app=leetcode id=20 lang=java
+ *
+ * [20] Valid Parentheses
+ */
 
-public class Problem20 {
+// @lc code=start
+class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
@@ -16,13 +21,6 @@ public class Problem20 {
         }
         return stack.isEmpty();
     }
-
-    public static void main(String[] args) {
-        Problem20 solution = new Problem20();
-        System.out.println(solution.isValid("()"));
-        System.out.println(solution.isValid("()[]{}"));
-        System.out.println(solution.isValid("(]"));
-        System.out.println(solution.isValid("([)]"));
-        System.out.println(solution.isValid("{[]}"));
-    }
 }
+// @lc code=end
+

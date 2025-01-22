@@ -1,7 +1,11 @@
-// Problem-49: Group Anagrams
-import java.util.*;
+/*
+ * @lc app=leetcode id=49 lang=java
+ *
+ * [49] Group Anagrams
+ */
 
-public class Problem49 {
+// @lc code=start
+class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0)
             return new ArrayList<>();
@@ -16,11 +20,6 @@ public class Problem49 {
         }
         return new ArrayList<>(map.values());
     }
-
-    public static void main(String[] args) {
-        Problem49 solution = new Problem49();
-        String[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
-        List<List<String>> result = solution.groupAnagrams(input);
-        System.out.println(result);
-    }
 }
+// @lc code=end
+
