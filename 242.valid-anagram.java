@@ -1,6 +1,11 @@
-import java.util.Arrays;
+/*
+ * @lc app=leetcode id=242 lang=java
+ *
+ * [242] Valid Anagram
+ */
 
-public class Problem242 {
+// @lc code=start
+class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
@@ -11,10 +16,6 @@ public class Problem242 {
         Arrays.sort(tArray);
         return Arrays.equals(sArray, tArray);
     }
-
-    public static void main(String[] args) {
-        Problem242 solution = new Problem242();
-        System.out.println(solution.isAnagram("anagram", "nagaram")); // true
-        System.out.println(solution.isAnagram("rat", "car")); // false
-    }
 }
+// @lc code=end
+

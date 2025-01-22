@@ -1,4 +1,11 @@
-public class Problem125 {
+/*
+ * @lc app=leetcode id=125 lang=java
+ *
+ * [125] Valid Palindrome
+ */
+
+// @lc code=start
+class Solution {
     public boolean isPalindrome(String s) {
         if (s == null) {
             return false;
@@ -16,10 +23,6 @@ public class Problem125 {
 
         return filtered.equals(reversed);
     }
-
-    public static void main(String[] args) {
-        Problem125 solution = new Problem125();
-        System.out.println(solution.isPalindrome("A man, a plan, a canal: Panama")); // true
-        System.out.println(solution.isPalindrome("race a car")); // false
-    }
 }
+// @lc code=end
+
