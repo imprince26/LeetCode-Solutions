@@ -14,8 +14,7 @@ class Solution {
                 j++;
             }
         }
-        return j;   
+        return j;
     }
 }
 // @lc code=end
-
