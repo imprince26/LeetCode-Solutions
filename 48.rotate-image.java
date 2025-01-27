@@ -22,9 +22,8 @@ class Solution {
                 int temp = matrix[i][j];
                 matrix[i][j] = matrix[i][n - 1 - j];
                 matrix[i][n - 1 - j] = temp;
-                }
             }
+        }
     }
 }
 // @lc code=end
-
