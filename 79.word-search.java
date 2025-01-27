@@ -16,7 +16,7 @@ class Solution {
         char[] w = word.toCharArray();
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (dfs(board, w, visited, i, j, 0)){
+                if (dfs(board, w, visited, i, j, 0)) {
                     return true;
                 }
             }
