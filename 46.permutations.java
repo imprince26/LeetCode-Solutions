@@ -11,6 +11,7 @@ class Solution {
         backtrack(res, new ArrayList<>(), nums);
         return res;
     }
+
     private void backtrack(List<List<Integer>> res, List<Integer> tempList, int[] nums) {
         if (tempList.size() == nums.length) {
             res.add(new ArrayList<>(tempList));
@@ -27,4 +28,3 @@ class Solution {
     }
 }
 // @lc code=end
-
