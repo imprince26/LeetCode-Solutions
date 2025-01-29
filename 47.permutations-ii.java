@@ -12,8 +12,9 @@ class Solution {
         boolean[] used = new boolean[nums.length];
         Arrays.sort(nums);
         backtrack(res, path, nums, used);
-        return res; 
+        return res;
     }
+
     void backtrack(List<List<Integer>> res, List<Integer> path, int[] nums, boolean[] used) {
         if (path.size() == nums.length) {
             res.add(new ArrayList<>(path));
@@ -35,4 +36,3 @@ class Solution {
     }
 }
 // @lc code=end
-
