@@ -17,14 +17,14 @@
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode first = head,second = head;
-        for (int i = 0; i <n; i++) {
+        ListNode first = head, second = head;
+        for (int i = 0; i < n; i++) {
             first = first.next;
         }
-        if(first==null){
+        if (first == null) {
             return head.next;
         }
-        while (first.next!= null) {
+        while (first.next != null) {
             first = first.next;
             second = second.next;
         }
