@@ -17,7 +17,7 @@ class Solution {
             if (i < nums.length) {
                 stack.push(i);
             }
-            }
+        }
         while (!stack.isEmpty()) {
             ans[stack.pop()] = -1;
         }
@@ -25,4 +25,3 @@ class Solution {
     }
 }
 // @lc code=end
-
