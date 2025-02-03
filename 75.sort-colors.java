@@ -26,8 +26,7 @@ class Solution {
         for (int i = red + white; i < red + white + blue; i++) {
             nums[i] = 2;
         }
-        
+
     }
 }
 // @lc code=end
-
