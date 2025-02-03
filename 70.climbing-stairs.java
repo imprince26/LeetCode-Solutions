@@ -7,18 +7,18 @@
 // @lc code=start
 class Solution {
     public int climbStairs(int n) {
-        if (n == 1) return 1;
+        if (n == 1)
+            return 1;
         int[] ans = new int[n + 1];
         // base case
         ans[1] = 1;
         ans[2] = 2;
         // dp
         for (int i = 3; i <= n; i++) {
-            ans[i] = ans[i - 1] + ans[i - 2]; 
+            ans[i] = ans[i - 1] + ans[i - 2];
         }
         return ans[n];
-        
+
     }
 }
 // @lc code=end
-
