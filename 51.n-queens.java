@@ -45,17 +45,17 @@ class Solution {
         }
         return true;
     }
+
     private String generateString(int col, int n) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             if (i == col) {
                 sb.append('Q');
-            } else {                
+            } else {
                 sb.append('.');
             }
         }
         return sb.toString();
-        }
+    }
 }
 // @lc code=end
-
