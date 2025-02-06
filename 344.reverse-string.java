@@ -15,8 +15,7 @@ class Solution {
             left++;
             right--;
         }
-        
+
     }
 }
 // @lc code=end
-
