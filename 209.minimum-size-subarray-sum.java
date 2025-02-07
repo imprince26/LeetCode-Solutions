@@ -7,7 +7,6 @@
 // @lc code=start
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
-
         int ans = Integer.MAX_VALUE;
         int sum = 0;
         int start = 0;
