@@ -7,16 +7,19 @@
 // @lc code=start
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
-        int left = 0, right = 0, sum = 0, min = Integer.MAX_VALUE;
-        while (right < nums.length) {
-            sum += nums[right++];
+
+        int ans = Integer.MAX_VALUE;
+        int sum = 0;
+        int start = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
             while (sum >= target) {
-                min = Math.min(min, right - left);
-                sum -= nums[left++];
+                ans = Math.min(ans, i - start + 1);
+                sum -= nums[start];
+                start++;
             }
         }
-        return min == Integer.MAX_VALUE ? 0 : min;
-
+        return ans == Integer.MAX_VALUE ? 0 : ans;
     }
 }
 // @lc code=end
