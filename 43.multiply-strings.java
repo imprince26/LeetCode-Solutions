@@ -27,7 +27,6 @@ class Solution {
             sb.append(result[i]);
         }
         return sb.toString();
-
     }
 }
 // @lc code=end
